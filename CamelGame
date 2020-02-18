@@ -1,0 +1,50 @@
+import random
+done = False
+milesTravelled = 0
+nativesTravelled = -25
+camelTiredness = 0
+thirst = 0
+canteen = 4
+print ("Welcome to Camel Game")
+print ("You have stolen a camel to make their way across the Mobi Desert.")
+print ("The natives want their camel back and are chasing you down!")
+print ("Get to the end before the natives to survive!")
+while not done:
+    print ("a. drink from your canteen")
+    print ("b. ahead moderate speed.")
+    print ("c. ahead full speed")
+    print ("d. stop for the night")
+    print ("e. status check")
+    print ("q. quit")
+    userInput = input ("What will you do?")
+    if userInput.upper () == "Q":
+        done = True
+    elif userInput.upper () == "D":
+        print ("You rest")
+        print ("Camel is rested")
+        print ("Natives continue")
+        camelTiredness = 0
+        nativesTravelled += random.randrange (7,15)
+    elif userInput.upper () == "C"
+        miles = random.randrange (10, 21)
+        milesTravelled += miles thirst += 1
+        camelTiredness += random.randrange (1,4)
+        nativesTravelled += random.randrange (7, 15)
+        print ("You moved" , miles, "miles")
+        print ("Thirst grows")
+        print ("Natives continue")
+    elif userInput.user () == "B"
+        miles = random.randrange (5,13)
+        milesTravelled += miles
+        thirst += 1
+        camelTiredness +=1
+        nativesTravelled += random.randrange (7,15)
+        print ("You moved", miles, "miles")
+        print ("Thirst grows")
+        print ("Natives continue")
+    elif userInput.upper () == "A"
+        if canteen > 0:
+            canteen -= 1
+            thirst = 0
+            print ("Drink from canteen")
+    elif 
